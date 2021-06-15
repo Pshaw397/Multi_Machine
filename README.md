@@ -125,3 +125,10 @@ sudo systemctl enable mongod
 - After that, you need to seed the database. Use the command `cd seeds` and then run `node seed.js`
 - cd back into the app directory, then run `npm start` to restart the app.js
 - Finally, on a brower enter the URL: `/192.168.10.100:27017/posts` to load up the posts page
+
+## Additional info
+To make the environment variable persistant:
+- SSH into the app
+- Use the command: `sudo nano etc/environement`
+- Paste the DB_HOST environment variable into the contents of that file
+- The variable should now be persistant
